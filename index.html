@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>포트폴리오 - 박종현</title>
+        <link rel="stylesheet" href="resume-style.css" />
+        <style>
+            /* 마크다운 스타일 추가 */
+            .resume-container {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+                    Arial, sans-serif;
+            }
+
+            /* 마크다운 테이블 스타일 */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            table th,
+            table td {
+                border: 1px solid #ddd;
+                padding: 12px 15px;
+                text-align: left;
+            }
+
+            table th {
+                background-color: #f8f9fa;
+                font-weight: 600;
+            }
+
+            /* 코드 블록 스타일 */
+            code {
+                background-color: #f6f8fa;
+                padding: 2px 6px;
+                border-radius: 3px;
+                font-family: "Courier New", monospace;
+                font-size: 0.9em;
+            }
+
+            pre {
+                background-color: #f6f8fa;
+                padding: 16px;
+                border-radius: 6px;
+                overflow-x: auto;
+            }
+
+            pre code {
+                background-color: transparent;
+                padding: 0;
+            }
+
+            b {
+                color: #2563eb;
+            }
+
+            /* 프로젝트 서브 헤더 스타일 (STAR 방식) */
+            .project-sub-header {
+                margin-top: 16px;
+                margin-bottom: 8px;
+            }
+
+            .project-sub-header h4 {
+                font-size: 1em;
+                font-weight: 600;
+                color: #1f2937;
+                margin: 12px 0 8px 0;
+                padding-left: 8px;
+                border-left: 3px solid #2563eb;
+            }
+
+            .project-sub-header p {
+                margin: 8px 0;
+                line-height: 1.6;
+                color: #374151;
+            }
+
+            /* 자기소개 섹션 스타일 */
+            .introduction-item p {
+                margin: 16px 0;
+                line-height: 1.8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="resume-container">
+            <!-- Header Section -->
+            <div class="header">
+                <img
+                    src="ID_Photo.jpg"
+                    alt="Profile Photo"
+                    class="profile-photo"
+                />
+                <div class="header-info">
+                    <h1>박종현</h1>
+                    <p class="subtitle">백엔드 개발자</p>
+                </div>
+            </div>
+
+            <!-- Introduction Section -->
+            <h2>About Me</h2>
+            <div class="introduction-item">
+                <p><b style="color: #374151"> Backend Developer 박종현 </b></p>
+                <p>
+                    Java / Spring 기반 백엔드 개발자로 레거시 시스템 개선과
+                    데이터 처리 성능 최적화 경험을 보유하고 있습니다.
+                </p>
+                <p>
+                    PostgreSQL 실행계획 분석을 통해 조회 성능을 50초에서 5초로
+                    개선했으며, 복잡한 결제 비즈니스 로직을 15,000줄에서 4,000줄
+                    구조로 리팩토링하여 서비스 유지보수성을 향상시켰습니다.
+                </p>
+                <p>
+                    레거시 JSP 기반 시스템을 Spring Boot 기반 구조로 개선한
+                    경험이 있으며 서비스 구조 개선과 안정적인 운영을 목표로
+                    개발하고 있습니다.
+                </p>
+            </div>
+
+            <hr />
+
+            <!-- Two Column Section: Skills and Education -->
+            <div class="two-column">
+                <!-- Skills Column -->
+                <div class="skills-section">
+                    <h2>Skills</h2>
+
+                    <div class="skills-category">
+                        <h3>Back-End</h3>
+                        <p>Java</p>
+                        <p>Spring Boot</p>
+                        <p>Spring Framework</p>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Build / DevOps</h3>
+                        <p>Gradle</p>
+                        <p>Linux</p>
+                    </div>
+                </div>
+
+                <!-- Skills Column -->
+                <div class="skills-section">
+                    <h2 style="color: #00000000">Skills</h2>
+                    <div class="skills-category">
+                        <h3>DB</h3>
+                        <p>PostgreSQL</p>
+                        <p>MySQL</p>
+                        <p>SQLite</p>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Front-End</h3>
+                        <p>Thymeleaf</p>
+                        <p>NextJS</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Experience Section -->
+            <h2>Career</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>(주)제이니스</h3>
+                </div>
+                <div class="experience-meta">
+                    <span>💼 연구원 | 기업부설연구소</span>
+                    <span>📅 2024.06 - 2025.09</span>
+                </div>
+
+                <ul>
+                    <li>
+                        PostgreSQL 기반 서비스 성능 개선 및 장애 대응
+                        <b>(조회 성능 50 → 5초 개선)</b>
+                    </li>
+                    <li>관리자 대시보드 개발 (Next.js / Thymeleaf)</li>
+                    <li>레거시 Spring 프로젝트의 Spring Boot 전환</li>
+                    <li>결제 및 구독 비즈니스 로직 리팩토링</li>
+                    <li>
+                        Gradle 빌드 자동화 및 빌드 시간 최적화
+                        <b>(빌드 시간 55초 → 30초 개선)</b>
+                    </li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <!-- Project Section -->
+            <h2>Key Projects</h2>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Pine Works</h3>
+                </div>
+                <div class="project-meta">
+                    <span>📅 2024.06 - 2025.09</span>
+                </div>
+
+                <div class="project-sub-header">
+                    <h3>📌 PostgreSQL 성능 튜닝 및 장애 대응</h3>
+                    <h4><strong>문제 상황</strong></h4>
+                    <ul>
+                        <li>
+                            고객사에서 직원들의 근무 기록이 조회되지 않는다는
+                            요청이 발생했고
+                            <b>연결 시간을 30초로 늘렸음에도 타임아웃이 발생</b
+                            >한 것을 확인했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>목표</strong></h4>
+                    <ul>
+                        <li>
+                            타임아웃이 발생하는 원인을 식별하여 쿼리를
+                            최적화하고 API의 응답속도를 개선해야 했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>행동</strong></h4>
+                    <ul>
+                        <li>
+                            EXPLAIN ANALYZE를 통해 실제 쿼리 실행 계획 분석을
+                            진행했습니다.
+                        </li>
+                        <li>
+                            분석 결과 첫 WITH 문 내에서 TO_CHAR()를 사용하여
+                            테이블 내의
+                            <b
+                                >모든 날짜 데이터에 포멧팅 처리, 인덱스 없는
+                                컬럼을 사용한 JOIN</b
+                            >이 문제 원인이라는 것을 알았습니다.
+                        </li>
+                        <li>
+                            포맷팅 로직을 애플리케이션 계층으로 이동하고
+                            인덱스를 추가하여 DB 내 불필요한 함수 사용을
+                            제거했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>결과</strong></h4>
+                    <ul>
+                        <li>
+                            쿼리의 실행 시간을 <b>50초에서 5초</b>로 단축시킬 수
+                            있었고, 쿼리의 코스트도 <b>100만에서 3만</b>으로
+                            감소시켰습니다.
+                        </li>
+                    </ul>
+                </div>
+
+                <br />
+
+                <div class="project-sub-header">
+                    <h3>📌 결제 관련 비즈니스 로직 리펙토링</h3>
+                    <h4><strong>문제 상황</strong></h4>
+                    <ul>
+                        <li>
+                            환불과 관련된 새로운 기능을 제작하며 금액 계산과
+                            관련된 코드가
+                            <b>하나의 서비스 메소드에서 모두 처리</b>하고 있어
+                            추가 기능 개발에 어려움을 겪고 있었습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>목표</strong></h4>
+                    <ul>
+                        <li>
+                            금액 계산 관련 API에 따라 서비스 메소드의 분리가
+                            필요했습니다.
+                        </li>
+                        <li>
+                            이후 추가 개발 시 동일한 문제가 발생하지 않도록
+                            변경된 비즈니스 로직에 대한 매뉴얼이 필요했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>행동</strong></h4>
+                    <ul>
+                        <li>
+                            리펙토링이 필요한 메소드를 호출하는 API를 확인하고
+                            <b>가입, 사용자 변경, 관리자 변경</b>
+                            케이스로 분리하였습니다.
+                        </li>
+                        <li>
+                            interface, class를 활용하여 <b>팩토리 패턴</b>으로
+                            코드를 분리하였습니다.
+                        </li>
+                        <li>
+                            QA 서버에 해당 수정 사항을 테스트 후, 클래스
+                            다이어그램을 사용하여 매뉴얼을 작성하였습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>결과</strong></h4>
+                    <ul>
+                        <li>
+                            코드 규모를 <b>15000줄에서 4000줄</b>로 축소하고
+                            신규 기능 개발 속도를 개선했습니다.
+                        </li>
+                    </ul>
+                </div>
+
+                <br />
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>사내 통합 포털 최신화</h3>
+                </div>
+                <div class="project-meta">
+                    <span>📅 2025.02 - 2025.09</span>
+                </div>
+
+                <div class="project-sub-header">
+                    <h3>📌 JSP -> MSA 프로젝트로 마이그레이션</h3>
+                    <h4><strong>문제 상황</strong></h4>
+                    <ul>
+                        <li>
+                            기존 사내 통합 포털의 경우 약 10년 이상 유지보수가
+                            진행되지 않았고
+                            <b
+                                >DB 쿼리가 페이지에 그대로 작성되어 있거나,
+                                서비스 페이지별 분리가 되어 있지 않은 </b
+                            >문제가 있다는 것을 확인했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>목표</strong></h4>
+                    <ul>
+                        <li>
+                            기존 페이지를 완전히 새로 만들 필요가 있었습니다.
+                        </li>
+                        <li>
+                            유지보수를 위해 새로운 서비스 페이지를 추가하기 쉬운
+                            구조로 설계할 필요가 있었습니다.
+                        </li>
+                        <li>
+                            팀 내 다른 인원들의 개발 편의를 위해 기존 기술
+                            스택을 사용할 필요가 있었습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>행동</strong></h4>
+                    <ul>
+                        <li>
+                            레거시 JSP 구조를 분석하고
+                            <b>인증·공통 로직을 분리</b>하여 서비스 단위로
+                            재설계했습니다.
+                        </li>
+                        <li>
+                            <b>Spring Cloud Gateway를 도입</b>해 라우팅과 1차
+                            토큰 검증을 중앙화했습니다.
+                        </li>
+                        <li>
+                            기능을 <b>독립 서비스 모듈</b>로 분리하고 REST 기반
+                            구조로 전환해 서비스 간 의존성을 낮췄습니다.
+                        </li>
+                        <li>
+                            개발·QA·운영 환경을 분리해
+                            <b>배포 안정성을 확보</b>했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>결과</strong></h4>
+                    <ul>
+                        <li>
+                            공통 로직 중앙화를 통해 <b>개발 생산성</b>을
+                            개선했습니다.
+                        </li>
+                        <li>
+                            서비스 분리로 <b>모듈 단위 확장 기반</b>을
+                            마련했습니다.
+                        </li>
+                        <li>
+                            장애 발생 시 영향 범위를 축소해 <b>운영 안정성</b>을
+                            높였습니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>PriceWatch</h3>
+                </div>
+                <div class="project-meta">
+                    <span>📅 2025.12 - 진행 중</span>
+                    <span
+                        >🔗
+                        <a
+                            href="https://github.com/KitStu17/pricewatch"
+                            target="_blank"
+                            >GitHub</a
+                        ></span
+                    >
+                </div>
+
+                <div class="project-sub-header">
+                    <h3>📌 상품 가격 추적 서비스 개발</h3>
+
+                    <h4><strong>문제 상황</strong></h4>
+                    <ul>
+                        <li>
+                            여러 쇼핑몰의 상품 가격은 수시로 변경되지만 이를
+                            <b
+                                >지속적으로 추적하고 비교할 수 있는 시스템이
+                                필요</b
+                            >했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>목표</strong></h4>
+                    <ul>
+                        <li>
+                            상품 가격 데이터를 주기적으로 수집하여
+                            <b>가격 변동을 기록하고 조회할 수 있는 서비스</b>를
+                            구현하는 것을 목표로 했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>행동</strong></h4>
+                    <ul>
+                        <li>
+                            Spring Boot 기반 백엔드 서버를 구성하여
+                            <b>상품 가격 데이터를 수집하고 저장하는 API</b>를
+                            구현했습니다.
+                        </li>
+                        <li>
+                            상품 정보와 가격 변동을 관리하기 위한
+                            <b>Product / PriceHistory 데이터 구조</b>를
+                            설계했습니다.
+                        </li>
+                        <li>
+                            가격 데이터를 주기적으로 수집하기 위한
+                            <b>Scheduler 기반 데이터 수집 구조</b>를
+                            설계했습니다.
+                        </li>
+                    </ul>
+
+                    <h4><strong>결과</strong></h4>
+                    <ul>
+                        <li>
+                            상품 가격 변동 데이터를 저장하고
+                            <b>가격 추이를 확인할 수 있는 서비스 구조</b>를
+                            구현했습니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+            <!-- Contact Info -->
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="mailto:kiri6077@naver.com">
+                    <span>📧</span> kiri6077@naver.com
+                </a>
+                <a href="https://github.com/KitStu17"
+                    ><span>🌐</span>Github Page</a
+                >
+                <a href="tel:010-5053-5474"> <span>📱</span> 010-5053-5474 </a>
+                <a href="https://kitstu17.github.io/" target="_blank">
+                    <span>📝</span> kitstu17.github.io
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
